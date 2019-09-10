@@ -1,8 +1,8 @@
 {
   "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
-  "title": "No-Op",
-  "publisher": "Microsoft",
-  "description": "Artifact used to work around Custom Script extension upgrade limitations on sysprepped images.",
+  "title": "No-Op123",
+  "publisher": "Microsoft1",
+  "description": "123Artifact used to work around Custom Script extension upgrade limitations on sysprepped images.",
   "tags": [
     "Windows"
   ],
