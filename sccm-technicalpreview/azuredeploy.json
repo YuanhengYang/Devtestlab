@@ -48,7 +48,7 @@
     }
   },
   "variables": {
-    "dscScript": "dsc/DCConfigurationTP.zip",
+    "dscScript": "DSC/DCConfiguration.zip",
     "virtualNetworkName": "[concat(toLower(parameters('prefix')), '-vnet')]",
     "domainName": "contoso.com",
     "networkSettings": {
@@ -182,7 +182,7 @@
         "typeHandlerVersion": "2.21",
         "autoUpgradeMinorVersion": true,
         "settings": {
-          "modulesUrl": "[Uri(parameters('_artifactsLocation'),'/dsc/DCConfiguration.zip',parameters('_artifactsLocationSasToken')))]",
+          "modulesUrl": "[Uri(parameters('_artifactsLocation'),variables('dscScript'),parameters('_artifactsLocationSasToken')))]",
           "configurationFunction": "[concat(variables('vmrole')[copyIndex()],'Configuration.ps1\\Configuration')]",
           "Properties": {
             "DomainName": "[variables('domainName')]",
