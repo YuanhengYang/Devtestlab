@@ -182,7 +182,7 @@
         "typeHandlerVersion": "2.21",
         "autoUpgradeMinorVersion": true,
         "settings": {
-          "modulesUrl": "[Uri(parameters('_artifactsLocation'),concat(variables('dscScript'),parameters('_artifactsLocationSasToken')))]",
+          "modulesUrl": "[concat(parameters('_artifactsLocation'),variables('dscScript'),parameters('_artifactsLocationSasToken'))]",
           "configurationFunction": "[concat(variables('vmrole')[copyIndex()],'Configuration.ps1\\Configuration')]",
           "Properties": {
             "DomainName": "[variables('domainName')]",
